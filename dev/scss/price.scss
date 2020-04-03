@@ -1,0 +1,251 @@
+@import "_all-page.scss";
+
+#header {
+    background: rgba(0, 0, 0, .9);
+    .header_bottom {
+        margin-bottom : $a50;
+        background: #fff;
+        .container {
+            .nav {
+                .menu {
+                    li {
+                        a {
+                            color: #000;
+                        }
+                        .price {
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main {
+    .page-wrapper {
+        margin-bottom : $a180;
+        .container {
+            .title {
+                font-family: MontserratBold;
+                margin-bottom : $a12;
+                display: inline-block;
+                border-bottom: 2px solid #000;
+            }
+            align-items: flex-start;
+            display: flex;
+            justify-content : space-between;
+            padding-bottom : 0;
+            position: relative;
+            .content {
+                width : $a870;
+                .price_product {
+                    margin-bottom : $a103;
+                    display: flex;
+                    justify-content : space-between;
+                    .wrap {
+                        .main_title {
+                            display: none;
+                        }
+                        p {
+                            line-height: $a29;
+                        }
+                        .button {
+                            padding: 0 $a41;
+                            margin-top : $a55;
+                            border: 1px solid #000;
+                            color: #000;
+                            transition: .5s all;
+                            &:hover {
+                                background: #000;
+                                color: #fff;
+                            }
+                        }
+                        .abs {
+                            display: none;
+                        }
+                    }
+                    .price_list {
+                        img {
+                            width : $a283;
+                        }
+                    }
+                }
+                .category {
+                    .wrapper {
+                        margin-top : $a50;
+                        display: flex;
+                        justify-content : space-between;
+                        flex-flow: row wrap;
+                        .item {
+                            margin-bottom : $a20;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            img {
+                                width : $a270;
+                            }
+                            .button {
+                                padding: 0 $a19;
+                                border: 1px solid #000;
+                                color: #000;
+                                font-family: MontserratRegular;
+                                font-size: $a14;
+                                line-height: $a17;
+                                &:hover {
+                                    background: #000;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .information_block {
+        .container {
+            padding-bottom : $a200;
+            .abs {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #main {
+        .page-wrapper {
+            margin-bottom : $m10;
+            .container {
+                .sidebar {
+                    display: none;
+                }
+                .content {
+                    width : 100%;
+                    .price_product {
+                        .wrap {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .main_title {
+                                margin-top : $m10;
+                                margin-bottom : $m5;
+                                font-family: 'MontserratBold';
+                                text-transform : uppercase;
+                                font-size : $m20;
+                                line-height : $m22;
+                                display: block;
+                            }
+                            .title {
+                                margin-bottom : $m10;
+                                font-size : $m16 !important;
+                                border-bottom: 1px solid #000;
+                                line-height : $m20 !important;
+                            }
+                            p {
+                                font-size : $m12 !important;
+                                line-height : $m15 !important;
+                            }
+                            .abs {
+                                width : 100%;
+                                display: flex;
+                                justify-content : center;
+                                //display: block;
+                                margin: $m15 0 $m10;
+                                img {
+                                    width : 70%;
+                                }
+                            }
+                            .button {
+                                width : 70%;
+                                margin-bottom : $m20;
+                                height : $m40;
+                                font-size : $m12;
+                            }
+                        }
+                        .price_list {
+                            display: none;
+                        }
+                    }
+                    .category {
+                        .title {
+                            margin-bottom : $m15;
+                            font-size : $m16 !important;
+                            line-height : $m20 !important;
+                        }
+                        p {
+                            font-size : $m12 !important;
+                            line-height : $m15 !important;
+                        }
+                        .wrapper {
+                            margin-top : $m25;
+                            .item {
+                                width : 50%;
+                                margin-bottom : $m10;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content : center;
+                                .title {
+                                    font-size : $m10 !important;
+                                    line-height : $m15 !important;
+                                }
+                                img {
+                                    width : $m130;
+                                }
+                                .button {
+                                    width : 70%;
+                                    font-size : $m7;
+                                    height : $m30;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .information_block {
+            margin-bottom : $m25;
+            .container {
+                padding-bottom : 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left : 0;
+                .abs_img1 {
+                    top : $m55;
+                    img {
+                        width : $m140;
+                    }
+                }
+                .abs_img2 {
+                    top : $m55;
+                    left : $m5;
+                    img {
+                        width : $m140;
+                    }
+                }
+                .bold {
+                    font-size : $m20 !important;
+                    margin-bottom : $m40;
+                    border: none;
+                }
+                .m {
+                    display: none;
+                }
+                .abs {
+                    display: flex;
+                    padding: 0 $m10 0 $m150 !important;
+                    font-size : $m12 !important;
+                    line-height : $m15 !important;
+                }
+                .button {
+                    margin-top : $m30;
+                    height : $m40;
+                    width : 80%;
+                    font-size : $m16;
+                }
+            }
+        }
+    }
+}

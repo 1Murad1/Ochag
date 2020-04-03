@@ -1,0 +1,155 @@
+@import "_all-page.scss";
+
+#header {
+    background: rgba(0, 0, 0, .9);
+    .header_bottom {
+        margin-bottom : $a50;
+        background: #fff;
+        .container {
+            .nav {
+                .menu {
+                    li {
+                        a {
+                            color: #000;
+                        }
+                        .sell {
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main {
+    .container {
+        .title {
+            font-family: MontserratBold;
+            margin-bottom : $a12;
+            display: inline-block;
+            border-bottom: 2px solid #000;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .content {
+            width : $a870;
+            .equipment {
+                margin-bottom : $a50;
+                width : 100%;
+                .title {
+                    margin-bottom : $a30;
+                }
+                .slider1 {
+                    width : 100%;
+                    margin-bottom : $a15;
+                    .slide {
+                        img {
+                            width : 100%;
+                        }
+                    }
+                }
+                .text {
+                    line-height: $a29;
+                }
+            }
+            .information_block {
+                margin-bottom : $a100;
+                width : 100%;
+                .container {
+                    width : 100%;
+                    padding: 0;
+                    flex-direction: column;
+                    .m {
+                        margin-bottom : $a44;
+                    }
+                    .m, .bold, .button {
+                        margin-left : $a400;
+                    }
+                    .abs {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #main {
+        .container {
+            .sidebar {
+                display: none;
+            }
+            .content {
+                width : 100%;
+                .equipment {
+                    .title {
+                        margin: $m25 0;
+                        padding-right : 0 !important;
+                        border: none;
+                        text-align: center !important;
+                        font-size : $m22 !important;
+                        line-height : $m25 !important;
+                    }
+                    .slider1 {
+                        margin-bottom : $m15;
+                    }
+                    .text {
+                        padding-right : $m15 !important;
+                        font-size : $m12 !important;
+                        line-height : $m15 !important;
+                        margin-bottom : $m40;
+                    }
+                }
+                .information_block {
+                    margin-bottom : $m25;
+                    .container {
+                        padding-bottom : 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-left : 0;
+                        .abs_img1 {
+                            top : $m55;
+                            img {
+                                width : $m140;
+                            }
+                        }
+                        .abs_img2 {
+                            top : $m55;
+                            left : $m5;
+                            img {
+                                width : $m140;
+                            }
+                        }
+                        .bold {
+                            margin: 0 0 $m40;
+                            padding-right : 0 !important;
+                            font-size : $m20 !important;
+                            //margin-bottom : $m40;
+                            border: none;
+                        }
+                        .m {
+                            display: none;
+                        }
+                        .abs {
+                            display: flex;
+                            padding: 0 $m10 0 $m150 !important;
+                            font-size : $m12 !important;
+                            line-height : $m15 !important;
+                        }
+                        .button {
+                            margin-top : $m30;
+                            height : $m40;
+                            width : 80%;
+                            font-size : $m16;
+                            margin-left : 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

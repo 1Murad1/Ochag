@@ -1,0 +1,265 @@
+@import "_all-page.scss";
+
+#header {
+    background: rgba(0, 0, 0, .9);
+    .header_bottom {
+        margin-bottom : $a50;
+        background: #fff;
+        .container {
+            .nav {
+                .menu {
+                    li {
+                        a {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#main {
+    .container {
+        .title {
+            font-family: MontserratBold;
+            margin-bottom : $a30;
+            display: inline-block;
+            border-bottom: 2px solid #000;
+        }
+        .page-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .content {
+                width : $a870;
+                .navigation {
+                    display: none;
+                }
+                .block1 {
+                    margin-bottom : $a60;
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width : $a369;
+                    }
+                }
+                .block2 {
+                    margin-bottom : $a50;
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width : $a363;
+                    }
+                }
+                .block_video {
+                    margin-bottom : $a50;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .title {
+                        margin-bottom : $a20;
+                    }
+                    .video {
+                        display: flex;
+                        align-items : center;
+                        justify-content: center;
+                        width : $a670;
+                        position: relative;
+                        .play {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-top: $a40 solid transparent;
+                            border-left: $a70 solid rgba(255, 255, 255, .7);
+                            border-bottom: $a40 solid transparent;
+                        }
+                        img {
+                            width : 100%;
+                        }
+                    }
+                }
+                .block3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .title {
+                        margin-bottom : $a22;
+                        font-size : $a24;
+                    }
+                    .wrapper {
+                        display: flex;
+                        img {
+                            width : $a360;
+                        }
+                        .right_block {
+                            margin-left : -$a30;
+                            padding-top : $a20;
+                            .button {
+                                padding: 0 $a41;
+                                margin-top : $a50;
+                                color: #000;
+                                border: 1px solid #000;
+                                &:hover {
+                                    background: #000;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .information_block {
+        .container {
+            padding-bottom : 0;
+            margin-bottom : $a170;
+            .bold {
+                font-size: $a48;
+                line-height: $a59;
+                border-bottom: none;
+                //margin-bottom : $a20;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #main {
+        .container {
+            .page-wrapper {
+                .sidebar {
+                    display: none;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width : 100%;
+                    .navigation {
+                        width : 100%;
+                        margin-top : $m5;
+                        display: block;
+                        font-family: MontserratRegular;
+                        font-size: $m8 !important;
+                        line-height: $m10 !important;
+                        color: #000000;
+                        a {
+                            font-size: $m8;
+                            line-height: $m10;
+                        }
+                    }
+                    .title {
+                        margin: $m20 0;
+                        //text-align: center !important;
+                        border: none;
+                        padding-right : 0 !important;
+                        font-size : $m20 !important;
+                        line-height : $m22 !important;
+                    }
+                    .block1, .block2 {
+                        flex-direction: column;
+                        img {
+                            width : 100%;
+                            margin-bottom : $m15;
+                        }
+                        p {
+                            font-size : $m12 !important;
+                            line-height : $m15 !important;
+                        }
+                    }
+                    .block2 {
+                        flex-direction: column-reverse;
+                    }
+                    .block_video, .block3  {
+                        .title {
+                            font-size : $m16 !important;
+                            line-height : $m18 !important;
+                            margin-bottom : $m15;
+                            border-bottom: 2px solid #000;
+                        }
+                        .video {
+                            width : 100%;
+                            .play {
+                                border-top: 5.08333vw solid transparent;
+                                border-left: 8.64583vw solid rgba(255,255,255,0.7);
+                                border-bottom: 5.08333vw solid transparent;
+                            }
+                        }
+                    }
+                    .block3 {
+                        position : relative;
+                        .wrapper {
+                            margin-top : $m40;
+                            margin-bottom : $m50;
+                            flex-direction: column;
+                            img {
+                                width : 100%;
+                            }
+                            .right_block {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                p {
+                                    top : $m50;
+                                    position: absolute;
+                                    font-size : $m12 !important;
+                                    line-height : $m15 !important;
+                                }
+                                .button {
+                                    //width : 75%;
+                                    padding: 0 $m30;
+                                    height : $m40;
+                                    font-size : $m16;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .information_block {
+            margin-bottom : $m75;
+            .container {
+                padding-bottom : 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left : 0;
+                .abs_img1 {
+                    top : $m55;
+                    img {
+                        width : $m140;
+                    }
+                }
+                .abs_img2 {
+                    top : $m55;
+                    left : $m5;
+                    img {
+                        width : $m140;
+                    }
+                }
+                .bold {
+                    font-size : $m20 !important;
+                    margin-bottom : $m40;
+                    border: none;
+                }
+                .m {
+                    display: flex;
+                    padding: 0 0 0 $m150 !important;
+                    font-size : $m12 !important;
+                    line-height : $m15 !important;
+                }
+                .button {
+                    margin-top : $m30;
+                    height : $m40;
+                    width : 80%;
+                    font-size : $m16;
+                }
+            }
+        }
+    }
+}
+

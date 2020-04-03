@@ -1,0 +1,187 @@
+@import "_all-page.scss";
+
+#header {
+    background: rgba(0, 0, 0, .9);
+    .header_bottom {
+        margin-bottom : $a50;
+        background: #fff;
+        .container {
+            .nav {
+                .menu {
+                    li {
+                        a {
+                            color: #000;
+                        }
+                        .contacts {
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main {
+    .container {
+        .title {
+            font-family: MontserratBold;
+            margin-bottom : $a12;
+            display: inline-block;
+            border-bottom: 2px solid #000;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .content {
+            width : $a870;
+            .requizits_company {
+                margin-bottom : $a28;
+                position: relative;
+                .abs_img1 {
+                    position: absolute;
+                    right : $a194;
+                    top : 0;
+                    z-index : 3;
+                    img {
+                        width : $a240;
+                    }
+                }
+                .abs_img2 {
+                    position: absolute;
+                    right : 0;
+                    top : $a34;
+                    z-index : 2;
+                    img {
+                        width : $a240;
+                    }
+                }
+                .abs_img3 {
+                    position: absolute;
+                    right : $a92;
+                    top : $a117;
+                    z-index : 1;
+                    img {
+                        width : $a240;
+                    }
+                }
+                .title {
+                    margin-bottom : $a32;
+                }
+                .requizits {
+                    line-height: $a29;
+                }
+            }
+            .information_block {
+                margin-bottom : $a100;
+                width : 100%;
+                .container {
+                    width : 100%;
+                    padding: 0;
+                    flex-direction: column;
+                    .m {
+                        margin-bottom : $a105;
+                    }
+                    .m, .bold, .button {
+                        margin-left : $a400;
+                    }
+                    .abs {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #main {
+        .container {
+            .sidebar {
+                display: none;
+            }
+            .content {
+                width : 100%;
+                .requizits_company {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .abs_img3, .abs_img1, .abs_img2 {
+                        top : $m60;
+                        width : 100%;
+                        right : 0;
+                        img {
+                            width : 55%;
+                        }
+                    }
+                    .abs_img3 {
+                        top : $m145;
+                        display: flex;
+                        justify-content : center;
+                    }
+                    .abs_img2 {
+                        display: flex;
+                        top : $m90;
+                        justify-content : flex-end;
+                    }
+                    .title {
+                        margin: $m20 0 $m300;
+                        padding-right : 0 !important;
+                        font-size : $m20 !important;
+                        border: none;
+                        line-height : $m22 !important;
+                    }
+                    .requizits {
+                        white-space: pre-line !important;
+                        text-align: center !important;
+                        font-size : $m12 !important;
+                        line-height : $m15 !important;
+                    }
+                }
+                .information_block {
+                    margin-bottom : $m65;
+                    .container {
+                        padding-bottom : 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-left : 0;
+                        .abs_img1 {
+                            top : $m55;
+                            img {
+                                width : $m140;
+                            }
+                        }
+                        .abs_img2 {
+                            top : $m55;
+                            left : $m5;
+                            img {
+                                width : $m140;
+                            }
+                        }
+                        .bold {
+                            margin: 0 0 $m40;
+                            padding-right : 0 !important;
+                            font-size : $m20 !important;
+                            //margin-bottom : $m40;
+                            border: none;
+                        }
+                        .m {
+                            display: flex;
+                            padding: 0 $m10 0 $m80 !important;
+                            font-size : $m12 !important;
+                            line-height : $m15 !important;
+                        }
+                        .button {
+                            margin-top : $m30;
+                            height : $m40;
+                            width : 80%;
+                            font-size : $m16;
+                            margin-left : 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
