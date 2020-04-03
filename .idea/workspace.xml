@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a110be4-a749-44da-8217-0272573edbb8" name="Default Changelist" comment="" />
+    <list default="true" id="0a110be4-a749-44da-8217-0272573edbb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/about_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/about_us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/common_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/common_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/contacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/contacts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/equipment.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/equipment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/about_us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/about_us.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/common_style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/common_style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/contacts.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/contacts.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/equipment.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/equipment.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/maps/price.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/maps/price.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/price.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/price.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/equipment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/karkas_eurozabory.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/karkas_eurozabory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/price.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/provolka.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/provolka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_armaturnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_armaturnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_chertegi.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_chertegi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_gabidon.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_gabidon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_gbi_kolec.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_gbi_kolec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_kladochnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_kladochnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_kladochnaya_xda.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_kladochnaya_xda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_rabica.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_rabica.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_svarnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_svarnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setka_svarnaya_rulon.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/setka_svarnaya_rulon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/steklo_armatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/steklo_armatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/zabory_ogragdeniya.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/zabory_ogragdeniya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/scss/_all-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/scss/_all-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/include/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/karkas_eurozabory.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/karkas_eurozabory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/provolka.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/provolka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_armaturnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_armaturnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_gbi_kolec.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_gbi_kolec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_kladochnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_kladochnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_kladochnaya_xda.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_kladochnaya_xda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_rabica.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_rabica.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_svarnaya.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_svarnaya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/setka_svarnaya_rulon.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/setka_svarnaya_rulon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/steklo_armatura.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/steklo_armatura.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/temp/zabory_ogragdeniya.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/zabory_ogragdeniya.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +64,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZMHm1PHFBGpMvbIicitaNjp8Ad" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/temp" />
   </component>
@@ -76,11 +127,22 @@
       <workItem from="1585757479539" duration="11572000" />
       <workItem from="1585772213591" duration="3835000" />
       <workItem from="1585807841596" duration="21278000" />
-      <workItem from="1585898385512" duration="3691000" />
+      <workItem from="1585898385512" duration="6724000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
