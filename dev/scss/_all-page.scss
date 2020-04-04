@@ -1,4 +1,6 @@
 @import "_pxTOvw.scss";
+@import "animate";
+@import "jquery.fancybox.min";
 
 $osn-col: #fff;
 
@@ -266,6 +268,9 @@ body {
 }
 
 #header {
+  .burger {
+    display: none;
+  }
   .header-bg {
     width: 100%;
     height: $a150;
@@ -358,6 +363,9 @@ body {
               line-height: $a37;
               color: #fff;
               text-transform : uppercase;
+              .mobile {
+                display: none;
+              }
             }
           }
         }
@@ -402,6 +410,25 @@ body {
         width: 100%;
         height: 100%;
       }
+    }
+  }
+}
+
+.up {
+  position: fixed;
+  right: $a200;
+  bottom: $a100;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -100;
+  img {
+    width: $a70;
+  }
+  &.active {
+    z-index: 100;
+    opacity: 1;
+    &.white {
+      filter: invert(1);
     }
   }
 }
@@ -542,13 +569,43 @@ h2 {
   }
 
   #header {
+    height: $m90;
+    .burger {
+      display: block;
+      width: $m41;
+    }
     .header_bottom {
+      position: absolute;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3) !important;
+      backdrop-filter: blur($a30);
+      height: calc(100vh - #{$m90});
       display: none;
+      .container .nav .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+          padding: $m20 0;
+          a {
+            font-size: $m30;
+            line-height: inherit;
+            text-align: center;
+            .desktop {
+              display: none;
+            }
+            .mobile {
+              display: block;
+            }
+          }
+        }
+      }
     }
     .header-bg {
       padding: $m5 0;
       height: auto;
       .container {
+        flex-flow: row wrap;
         .logo {
           display: flex;
           flex-direction: column;
@@ -563,11 +620,46 @@ h2 {
             padding-right : 0 !important;
           }
         }
-        .info, .language, .search {
+        .info, .language {
+          order: 1;
+          display: none;
+        }
+        .language {
+          .wrap {
+            .arrow {
+              width: $m12;
+            }
+            select {
+              font-size: $m16;
+              line-height: initial;
+            }
+          }
+        }
+        .info {
+          margin: 0 auto;
+          padding-left: $m45;
+          .wrap {
+            .arrow {
+              width: $m12;
+            }
+            select {
+              font-size: $m16;
+              line-height: initial;
+            }
+          }
+          .address {
+            font-size: $m9;
+            text-align: center;
+            margin-top: $m3;
+            width: 100%;
+          }
+        }
+        .search {
           display: none;
         }
         .button {
           height : $m20;
+          margin: 0 $m20;
         }
       }
     }
