@@ -10,7 +10,7 @@
             <link rel="stylesheet" type="text/css" href="css/common_style.css" />
             <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
         </head>
-        <body>
+        <body id="body">
             <header id="header">
                 <div class="header-bg">
                     <div class="container">
@@ -30,6 +30,7 @@
                             <address class="address">г.Харьков, ул.Енакиевская 8</address>
                         </div>
                         <button class="button">Отправить заявку</button>
+                        <img src="/img/icons/burger.svg" alt="" class="burger"/>
             <!--            <button class="search">-->
             <!--                <img src="img/icons/search_btn.svg" alt="search" />-->
             <!--            </button>-->
@@ -56,7 +57,7 @@
                                     <a class="price" href="/price.html">Цены</a>
                                 </li>
                                 <li>
-                                    <a class="sell" href="/equipment.html">Продажа оборудования</a>
+                                    <a class="sell" href="/equipment.html"><span class="desktop">Продажа оборудования</span><span class="mobile">оборудование</span></a>
                                 </li>
                                 <li>
                                     <a class="contacts" href="/contacts.html">Контакты</a>
@@ -226,6 +227,10 @@
                     </div>
                 </div>
             </footer>
+            
+            <a href="#body" class="up"><img src="/img/icons/upicon.svg" alt="" /></a>
+            
+            <script src="/js/libs.min.js"></script>
             <script src="js/libs.min.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdXRbyeV0met71bXTHrfGP9TebJxhdBDo&callback=initMap" async defer></script>
             <script type="text/javascript" src="js/main.js"></script>
