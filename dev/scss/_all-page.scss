@@ -156,95 +156,7 @@ a {
     }
 }
 
-.wrapper_form {
-  .popup {
-    background: rgba(0, 0, 0, .5);
-    position: fixed;
-    height : 100%;
-    width : 100%;
-    top : 0;
-    left : 0;
-    display: flex;
-    align-items: center;
-    justify-content : center;
-    z-index : 1000;
-    .form {
-      position: relative;
-      padding-top : $a33;
-      width: $a650;
-      height: $a740;
-      background: rgba(35, 35, 35, 0.9);
-      box-shadow: $a1 $a1 $a10 rgba(0, 0, 0, 0.4), $a1 $a1 $a10 rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur($a50);
-      border-radius: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .close {
-        background: none;
-        border: none;
-        position: absolute;
-        cursor: pointer;
-        right : $a33;
-        top : $a20;
-        font-family: MontserratRegular;
-        font-size: $a30;
-        line-height: $a37;
-        color: #fff;
-      }
-      .title_form {
-        font-family: MontserratBold;
-        font-size: $a30;
-        line-height: $a37;
-        color: #fff;
-      }
-      label {
-        margin-top : $a60;
-        display: flex;
-        align-items: center;
-        width : $a510;
-        height : $a40;
-        img {
-          width : $a40;
-        }
-        input {
-          padding-left : $a15;
-          width : 100%;
-          border-bottom: 1px solid #fff;
-          border-left: none;
-          border-top: none;
-          border-right: none;
-          background: none !important;
-          height : 100%;
-          font-family: MontserratRegular;
-          font-size: $a18;
-          line-height: $a22;
-          color: #666666;
-        }
-      }
-      .textarea {
-        resize: none;
-        background: none;
-        padding: $a26 $a22 0;
-        width: $a470;
-        height: $a260;
-        border: 1px solid #fff;
-        border-radius: $a40;
-        margin-top : $a38;
-        font-family: MontserratRegular;
-        font-size: $a18;
-        line-height: $a22;
-        color: #666666;
-        &:focus::-webkit-input-placeholder {
-          color: transparent;
-        }
-      }
-      .button_form {
-        margin-top : $a70;
-      }
-    }
-  }
-}
+
 
 .hideShow {
   display: none;
@@ -473,6 +385,95 @@ body {
 #footer {
   height : $a540;
   background: url("../img/footer/bg_footer.png") no-repeat;
+  .wrapper_form {
+    .popup {
+      background: rgba(0, 0, 0, .5);
+      position: fixed;
+      height : 100%;
+      width : 100%;
+      top : 0;
+      left : 0;
+      display: flex;
+      align-items: center;
+      justify-content : center;
+      z-index : 1000;
+      .form {
+        position: relative;
+        padding-top : $a33;
+        width: $a650;
+        height: $a740;
+        background: rgba(35, 35, 35, 0.9);
+        box-shadow: $a1 $a1 $a10 rgba(0, 0, 0, 0.4), $a1 $a1 $a10 rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur($a50);
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .close {
+          background: none;
+          border: none;
+          position: absolute;
+          cursor: pointer;
+          right : $a33;
+          top : $a20;
+          font-family: MontserratRegular;
+          font-size: $a30;
+          line-height: $a37;
+          color: #fff;
+        }
+        .title_form {
+          font-family: MontserratBold;
+          font-size: $a30;
+          line-height: $a37;
+          color: #fff;
+        }
+        label {
+          margin-top : $a60;
+          display: flex;
+          align-items: center;
+          width : $a510;
+          height : $a40;
+          img {
+            width : $a40;
+          }
+          input {
+            padding-left : $a15;
+            width : 100%;
+            border-bottom: 1px solid #fff;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            background: none !important;
+            height : 100%;
+            font-family: MontserratRegular;
+            font-size: $a18;
+            line-height: $a22;
+            color: #666666;
+          }
+        }
+        .textarea {
+          resize: none;
+          background: none;
+          padding: $a26 $a22 0;
+          width: $a470;
+          height: $a260;
+          border: 1px solid #fff;
+          border-radius: $a40;
+          margin-top : $a38;
+          font-family: MontserratRegular;
+          font-size: $a18;
+          line-height: $a22;
+          color: #666666;
+          &:focus::-webkit-input-placeholder {
+            color: transparent;
+          }
+        }
+        .button_form {
+          margin-top : $a70;
+        }
+      }
+    }
+  }
   .container {
     display: flex;
     justify-content : space-between;
@@ -652,7 +653,7 @@ h2 {
     }
   }
 
-  .button {
+  .button, .button_form {
     font-size     : $m8;
     height        : $m24;
     padding       : 0 $m15;
@@ -763,8 +764,66 @@ h2 {
     }
   }
 
+  input[placeholder] {
+    text-overflow:ellipsis;
+  }
+
   #footer {
     height: auto;
+
+    .wrapper_form {
+      .popup {
+        .form {
+          padding-top : $m35;
+          width: 80%;
+          height: $m360;
+          .close {
+            right : $m20;
+            top : $m20;
+            font-size: $m12;
+            line-height: $a15;
+          }
+          .title_form {
+            font-size: $m20 !important;
+            line-height: $a22 !important;
+          }
+          label {
+            margin-top : $m30;
+            width : 75%;
+            height : $m30;
+            img {
+              width : $m30;
+            }
+            input {
+              padding-left : $m15;
+              width : 100%;
+              height : 100%;
+              font-size: $m16;
+              line-height: $m20;
+            }
+          }
+          .textarea {
+            resize: none;
+            background: none;
+            padding: $m15 $m13 0;
+            width: 75%;
+            height: $m100;
+            margin-top : $m15;
+            font-size: $m12;
+            line-height: $m15;
+          }
+          .button_form {
+            margin-top : $m15;
+            height : $m40;
+            width : 70%;
+            font-size : $m16;
+            line-height : $m20;
+          }
+        }
+      }
+    }
+
+
     .container {
       padding-top: $m25 ;
       padding-bottom: $m25 ;
@@ -792,6 +851,61 @@ h2 {
 
 }
 
+@media screen and (width: 768px) {
+  #footer {
+    .wrapper_form {
+      .popup {
+        .form {
+          padding-top : $m20;
+          width: 80%;
+          height: $m220;
+          .close {
+            right : $m10;
+            top : $m10;
+            font-size: $m12;
+            line-height: $a15;
+          }
+          .title_form {
+            font-size: $m20 !important;
+            line-height: $a22 !important;
+          }
+          label {
+            margin-top : $m10;
+            width : 75%;
+            height : $m30;
+            img {
+              width : $m20;
+            }
+            input {
+              padding-left : $m5;
+              width : 100%;
+              height : 100%;
+              font-size: $m12;
+              line-height: $m15;
+            }
+          }
+          .textarea {
+            resize: none;
+            background: none;
+            padding: $m5 $m5 0;
+            width: 75%;
+            height: $m50;
+            margin-top : $m15;
+            font-size: $m12;
+            line-height: $m15;
+          }
+          .button_form {
+            margin-top : $m10;
+            height : $m20;
+            width : 70%;
+            font-size : $m12;
+            line-height : $m15;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 480px) {
   #header {
