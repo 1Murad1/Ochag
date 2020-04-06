@@ -213,9 +213,10 @@
                         width : 100%;
                         font-size : $m10;
                         line-height : $m14;
+                        margin-bottom : 0;
                     }
                     .button {
-                        margin-top : $m20;
+                        margin-top : $m30;
                         width : 50%;
                         font-size : $m12;
                         //padding : 0 $m20 !important;
@@ -348,7 +349,7 @@
             .slide {
                 picture {
                     img {
-                        height : $m350;
+                        height : $m430;
                     }
                 }
                 .container {
