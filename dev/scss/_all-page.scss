@@ -228,6 +228,29 @@ a {
   cursor: pointer;
   transition: all 0.5s;
   width: fit-content;
+  &:before {
+    content: '';
+    font-size: 0;
+    transition: all 0.5s;
+  }
+  &.error {
+    background: red !important;
+    font-size: 0;
+    color: #fff !important;
+    &:before {
+      content: 'Ошибка отправки формы';
+      font-size: $a24;
+    }
+  }
+  &.ok {
+    background: green !important;
+    font-size: 0;
+    color: #fff !important;
+    &:before {
+      content: 'Форма успешно отправлена';
+      font-size: $a24;
+    }
+  }
   &:hover {
     background-color: #fff;
     color: #000;

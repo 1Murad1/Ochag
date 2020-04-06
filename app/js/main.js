@@ -44,6 +44,43 @@ $(document).ready(() => {
     $('.burger').click(function () {
         $('#header .info, #header .language, #header .header_bottom').slideToggle()
     })
+    $("#form").submit(function () {
+        let quantity = $('form input').length;
+        let inputDone = 0;
+        $('form input').each(function () {
+            $(this).attr('required', true)
+            if ($(this).val()) {
+                inputDone++
+            }
+        });
+        if (inputDone === quantity) {
+            let formID = $(this).attr('id');
+            let formNm = $('#' + formID);
+            $.ajax({
+                type: "POST",
+                url: '/php/contact-form.php',
+                data: formNm.serialize(),
+                beforeSend: function() {
+                    $('button[type="submit"]').addClass('load');
+                },
+                complete: function(){
+                    $('button[type="submit"]').removeClass('load');
+                },
+                success: function (data) {
+                    formNm.find('input, textarea').not(':input[type=submit], :input[type=hidden]').val('');
+                    $('button[type="submit"]').addClass('ok');
+                },
+                error: function (jqXHR, text, error) {
+                    console.log(jqXHR, text, error);
+                    $('button[type="submit"], form .checkbox').addClass('error');
+                }
+            });
+            return false;
+        } else {
+            $('button[type="submit"], form .checkbox').addClass('error');
+            return false
+        }
+    });
 });
 
 $(window).on('scroll', () => {
@@ -59,7 +96,7 @@ $(window).on('scroll', () => {
    }
 });
 
-$(".button").click(function () {
+$(".send").click(function () {
     $('.wrapper_form').addClass('show');
 });
 

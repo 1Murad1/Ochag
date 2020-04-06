@@ -31,7 +31,7 @@
                             </div>
                             <address class="address">г.Харьков, ул.Енакиевская 8</address>
                         </div>
-                        <button class="button">Отправить заявку</button>
+                        <button class="button send">Отправить заявку</button>
                         <img src="/img/icons/burger.svg" alt="" class="burger"/>
             <!--            <button class="search">-->
             <!--                <img src="img/icons/search_btn.svg" alt="search" />-->
@@ -199,7 +199,7 @@
                                     наш менеджер
                                     перезвонит в любое
                                     удобное время</p>
-                                <button class="button">Отправить заявку</button>
+                                <button class="button send">Отправить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -221,17 +221,17 @@
                 </div>
                 <div class="wrapper_form hideShow">
                     <div class="popup">
-                        <form class="form">
+                        <form class="form" id="form">
                             <button type="button" class="close">x</button>
                             <p class="title_form">Отправить заявку</p>
-                            <label for="mail">
-                                <img src="img/icons/phone_icon.svg" alt="icon_contact" /><input  id="mail" type="text" name="mail" class="email" placeholder="введите имя" required />
+                            <label for="name">
+                                <img src="img/icons/phone_icon.svg" alt="icon_contact" /><input  id="name" type="text" name="name" class="name" placeholder="введите имя" required />
                             </label>
                             <label for="phone">
                                 <img src="img/icons/user_icon.svg" alt="icon_phone" /><input id="phone" type="tel" name="tel" class="phone" placeholder="введите номер телефона" required/>
                             </label>
-                            <textarea name="text" class="textarea" placeholder="Задайте вопрос или просто укажите удобное время для звонка менеджера"></textarea>
-                            <button class="button_form">Отправить заявку</button>
+                            <textarea name="message" class="textarea" placeholder="Задайте вопрос или просто укажите удобное время для звонка менеджера"></textarea>
+                            <button type="submit" class="button_form">Отправить заявку</button>
                         </form>
                     </div>
                 </div>
