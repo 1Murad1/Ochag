@@ -156,7 +156,103 @@ a {
     }
 }
 
+.wrapper_form {
+  .popup {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    height : 100%;
+    width : 100%;
+    top : 0;
+    left : 0;
+    display: flex;
+    align-items: center;
+    justify-content : center;
+    z-index : 1000;
+    .form {
+      position: relative;
+      padding-top : $a33;
+      width: $a650;
+      height: $a740;
+      background: rgba(35, 35, 35, 0.9);
+      box-shadow: $a1 $a1 $a10 rgba(0, 0, 0, 0.4), $a1 $a1 $a10 rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur($a50);
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .close {
+        background: none;
+        border: none;
+        position: absolute;
+        cursor: pointer;
+        right : $a33;
+        top : $a20;
+        font-family: MontserratRegular;
+        font-size: $a30;
+        line-height: $a37;
+        color: #fff;
+      }
+      .title_form {
+        font-family: MontserratBold;
+        font-size: $a30;
+        line-height: $a37;
+        color: #fff;
+      }
+      label {
+        margin-top : $a60;
+        display: flex;
+        align-items: center;
+        width : $a510;
+        height : $a40;
+        img {
+          width : $a40;
+        }
+        input {
+          padding-left : $a15;
+          width : 100%;
+          border-bottom: 1px solid #fff;
+          border-left: none;
+          border-top: none;
+          border-right: none;
+          background: none !important;
+          height : 100%;
+          font-family: MontserratRegular;
+          font-size: $a18;
+          line-height: $a22;
+          color: #666666;
+        }
+      }
+      .textarea {
+        resize: none;
+        background: none;
+        padding: $a26 $a22 0;
+        width: $a470;
+        height: $a260;
+        border: 1px solid #fff;
+        border-radius: $a40;
+        margin-top : $a38;
+        font-family: MontserratRegular;
+        font-size: $a18;
+        line-height: $a22;
+        color: #666666;
+        &:focus::-webkit-input-placeholder {
+          color: transparent;
+        }
+      }
+      .button_form {
+        margin-top : $a70;
+      }
+    }
+  }
+}
 
+.hideShow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 
 .information_block {
   .container {
@@ -204,7 +300,7 @@ a {
   }
 }
 
-.button {
+.button, .button_form {
   font-family: MontserratRegular;
   padding: 0 $a64;
   height: $a60;
@@ -579,8 +675,10 @@ h2 {
       width: 100%;
       background: rgba(0, 0, 0, 0.3) !important;
       backdrop-filter: blur($a30);
-      height: calc(100vh - #{$m90});
+      //height: calc(100vh - #{$m90});
       display: none;
+      height: auto;
+      z-index : 10;
       .container .nav .menu {
         display: flex;
         flex-direction: column;
@@ -693,6 +791,7 @@ h2 {
   }
 
 }
+
 
 @media screen and (max-width: 480px) {
   #header {

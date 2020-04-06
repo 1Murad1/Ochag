@@ -58,3 +58,11 @@ $(window).on('scroll', () => {
        $('.up').removeClass('active')
    }
 });
+
+$(".button").click(function () {
+    $('.wrapper_form').addClass('show');
+});
+
+$(".close").click(function () {
+    $('.wrapper_form').removeClass('show');
+});

@@ -81,7 +81,7 @@
                             <h1>Лидер среди изготовления и
                                 производства металлических
                                 сеток в Украине</h1>
-                            <button class="button">Подробнее</button>
+                            <a href="#about_us" class="button">Подробнее</a>
                         </div>
                     </div>
                     <div class="slide">
@@ -282,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about_us">
+                <div class="about_us" id="about_us">
                     <div class="container">
                         <p><b>Металлические сетки Очаг</b> - лидер и крупнейший поставщик металлической продукции</p>
                         <p class="text">Наша компания является современным и быстроразвивающимся изготовителем
@@ -384,6 +384,22 @@
                     </div>
                     <div class="map">
                         <div id="map"></div>
+                    </div>
+                </div>
+                <div class="wrapper_form hideShow">
+                    <div class="popup">
+                        <form class="form">
+                            <button type="button" class="close">x</button>
+                            <p class="title_form">Отправить заявку</p>
+                            <label for="mail">
+                                <img src="img/icons/phone_icon.svg" alt="icon_contact" /><input  id="mail" type="text" name="mail" class="email" placeholder="введите имя" required />
+                            </label>
+                            <label for="phone">
+                                <img src="img/icons/user_icon.svg" alt="icon_phone" /><input id="phone" type="tel" name="tel" class="phone" placeholder="введите номер телефона" required/>
+                            </label>
+                            <textarea name="text" class="textarea" placeholder="Задайте вопрос или просто укажите удобное время для звонка менеджера"></textarea>
+                            <button class="button_form">Отправить заявку</button>
+                        </form>
                     </div>
                 </div>
             </footer>

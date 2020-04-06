@@ -122,6 +122,7 @@
                     display: none;
                 }
                 .content {
+                    z-index : -1;
                     width : 100%;
                     .price_product {
                         .wrap {
