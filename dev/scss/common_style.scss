@@ -53,6 +53,14 @@
                         width : $a363;
                     }
                 }
+                .block_comparison {
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        width : 100%;
+                        margin-bottom : $a25;
+                    }
+                }
                 .block_video {
                     margin-bottom : $a50;
                     display: flex;
