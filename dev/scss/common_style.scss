@@ -22,6 +22,17 @@
 
 #main {
     .container {
+        position: relative;
+        .img_pos {
+            position: absolute;
+            bottom : 0;
+            left : 0;
+            width : $a270;
+            img {
+                height : $a210;
+                width : 100%;
+            }
+        }
         .title {
             font-family: MontserratBold;
             margin-bottom : $a30;
@@ -137,6 +148,19 @@
 @media screen and (max-width: 1023px) {
     #main {
         .container {
+            margin-top : $m10;
+            display: flex;
+            flex-direction: column;
+            .img_pos {
+                order: 2;
+                width : 100%;
+                position: relative;
+                img {
+                    margin-bottom : $m5;
+                    height : auto;
+                    width : 100%;
+                }
+            }
             .page-wrapper {
                 .sidebar {
                     display: none;
