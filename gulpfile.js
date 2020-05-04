@@ -62,6 +62,7 @@ gulp.task('img', function() {
     return gulp.src('dev/img-big/**/*.*') // Берем все изображения из app
         .pipe(rename(function (file) {
             file.basename = file.basename.toLowerCase();
+            file.extname = file.extname.toLowerCase();
         }))
         .pipe(newer('app/img'))
         .pipe(image())

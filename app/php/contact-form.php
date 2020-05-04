@@ -7,7 +7,7 @@ $message        = htmlspecialchars($_POST["message"]);
 
 
 /* Ваш адрес и тема сообщения */
-$address = "webenvir.mail@gmail.com";
+$address = "ruslan.slpv@ukr.net";
 $sub = "Заявка на сайт";
 
 $mes = "
@@ -23,5 +23,5 @@ message: $message
 
 /* Отправляем сообщение, используя mail() функцию */
 $from  = $email;
-mail($address, $sub, $mes, 'From:'.$from);
+mail($address, $sub, $mes, 'From: info@ochagh.com.ua');
 ?>
