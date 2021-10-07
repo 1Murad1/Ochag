@@ -146,6 +146,21 @@
 }
 
 @media screen and (max-width: 1023px) {
+    #header {
+        .header_bottom {
+            .container {
+                .nav {
+                    .menu {
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     #main {
         .container {
             margin-top : $m10;

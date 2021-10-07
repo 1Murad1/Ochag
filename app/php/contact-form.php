@@ -7,7 +7,7 @@ $message        = htmlspecialchars($_POST["message"]);
 
 
 /* Ваш адрес и тема сообщения */
-$address = "ruslan.slpv@ukr.net";
+$address = "stroysetkaopt@gmail.com";
 $sub = "Заявка на сайт";
 
 $mes = "

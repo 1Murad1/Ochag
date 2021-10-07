@@ -145,6 +145,24 @@
 }
 
 @media screen and (max-width: 1023px) {
+    #header {
+        .header_bottom {
+            .container {
+                .nav {
+                    .menu {
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                            .about_us {
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     #main {
         .container {
             .wrapper, .sidebar {

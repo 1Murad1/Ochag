@@ -13,15 +13,18 @@ function initMap() {
             "оцинкованная...</p>"
     });
 
-    mark.addListener("click", function () {
+    mark.add
+    Listener("click", function () {
         info.open(map, mark)
     });
 }
 
 $('.slider').slick({
     arrows: false,
-    dots: true
+    dots: true,
+    infinite: false
 });
+
 
 $('.slider1').slick({
     arrows: false,
@@ -103,3 +106,48 @@ $(".send").click(function () {
 $(".close").click(function () {
     $('.wrapper_form').removeClass('show');
 });
+
+/////// change language //////
+let select = document.querySelector(".ru_en_ua");
+let allLang = ['ru', 'en'];
+select.addEventListener("change", changeURLLanguage);
+
+// перенаправить на url с указанием языка
+
+
+function changeURLLanguage () {
+    let lang = select.value;
+    location.href =  window.location.pathname + '#'+lang;
+    location.reload()
+}
+
+function changeLanguage () {
+    let hash = window.location.hash.substr(1);
+    let pathName = window.location.pathname;
+    let newPathName = pathName.substring(0, pathName.indexOf('.'));
+
+    if(!allLang.includes(hash)) {
+        location.href =  window.location.pathname + '#ru';
+        location.reload()
+    }
+    select.value = hash;
+
+    for(let title in titleArr) {
+        if(newPathName == title) {
+            document.querySelector('title').innerHTML = titleArr[title][hash];
+        }
+    }
+
+    document.querySelector('input.name').placeholder = langArr['input-placeholder-name'][hash];
+    document.querySelector('input.phone').placeholder = langArr['input-placeholder-tel'][hash];
+    document.querySelector('textarea.textarea').placeholder = langArr['input-placeholder-message'][hash];
+
+    for(let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash]
+        }
+    }
+
+}
+changeLanguage();
