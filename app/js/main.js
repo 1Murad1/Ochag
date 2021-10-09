@@ -125,12 +125,18 @@ function changeLanguage () {
     let hash = window.location.hash.substr(1);
     let pathName = window.location.pathname;
     let newPathName = pathName.substring(0, pathName.indexOf('.'));
+    select.value = hash;
+    if (select.value == "ru") {
+        localStorage["language"] = "#ru"
+    } else if (select.value == "en") {
+        localStorage["language"] = "#en"
+    }
+    let language = localStorage.getItem("language");
 
     if(!allLang.includes(hash)) {
-        location.href =  window.location.pathname + '#ru';
+        location.href =  window.location.pathname + language;
         location.reload()
     }
-    select.value = hash;
 
     for(let title in titleArr) {
         if(newPathName == title) {
