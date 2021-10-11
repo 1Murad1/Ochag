@@ -113,33 +113,34 @@ let allLang = ['ru', 'en'];
 select.addEventListener("change", changeURLLanguage);
 
 // перенаправить на url с указанием языка
-
-
+// let langLocal = select.value;
+// localStorage.setItem("language", langLocal)
 function changeURLLanguage () {
     let lang = select.value;
     location.href =  window.location.pathname + '#'+lang;
+    localStorage["language"] = lang
     location.reload()
 }
 
 function changeLanguage () {
     let hash = window.location.hash.substr(1);
     let pathName = window.location.pathname;
-    let newPathName = pathName.substring(0, pathName.indexOf('.'));
-    select.value = hash;
-    if (select.value == "ru") {
-        localStorage["language"] = "#ru"
-    } else if (select.value == "en") {
-        localStorage["language"] = "#en"
+    let currentLang = localStorage.getItem("language")
+    if(currentLang === null) {
+        location.href =  window.location.pathname + "#ru";
+        localStorage.setItem("language", "ru")
+        location.reload();
+    } else {
+        if(!allLang.includes(hash)) {
+            location.href =  window.location.pathname + "#" + currentLang;
+            location.reload();
+        }
     }
-    let language = localStorage.getItem("language");
 
-    if(!allLang.includes(hash)) {
-        location.href =  window.location.pathname + language;
-        location.reload()
-    }
+    select.value = hash;
 
     for(let title in titleArr) {
-        if(newPathName == title) {
+        if(pathName == title) {
             document.querySelector('title').innerHTML = titleArr[title][hash];
         }
     }

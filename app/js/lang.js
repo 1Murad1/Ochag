@@ -1,5 +1,5 @@
 const titleArr = {
-    "": {
+    "/": {
         "ru": "Очаг",
         "en": "Ochag"
     },
@@ -548,7 +548,7 @@ const langArr = {
             "with the possibility of paying for the\n" +
             "goods on place upon receipt."
     },
-    "page-about-us-text-button-send": {
+    "page-about-us-button-send": {
         "ru": "Отправить заявку",
         "en": "Send a request"
     },
