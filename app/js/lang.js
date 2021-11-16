@@ -219,6 +219,10 @@ const langArr = {
         "en": "Fiberglass\n" +
             "fittings"
     },
+    "sidebar-powder-coating": {
+        "ru": "Порошковая покраска",
+        "en": "Powder coating"
+    },
     "sidebar-equipment": {
         "ru": "Оборудование",
         "en": "Equipment"
@@ -279,6 +283,10 @@ const langArr = {
     "materials-description-fourteen": {
         "ru": "Стеклопластикова арматура",
         "en": "Fiberglass fittings"
+    },
+    "materials-description-fiveteen": {
+        "ru": "Порошковая покраска",
+        "en": "Powder coating"
     },
     "main-about-us-title": {
         "ru": "<b>Металлические сетки Очаг</b> - лидер и крупнейший поставщик металлической продукции",
@@ -2182,6 +2190,116 @@ const langArr = {
     "page-zabory-ogragdeniya-button-send": {
         "ru": "Отправить заявку",
         "en": "Send a request"
-    }
+    },
+
+
+
+    "page-poroshkovaya-pokraska-top-link": {
+        "ru": "<a href=\"/index.html\">Главная</a> >> Каталог >> Порошковая покраска",
+        "en": "<a href=\"/index.html\"> Home </a> >> Catalog >> Powder coating"
+    },
+    "page-poroshkovaya-pokraska-title": {
+        "ru": "Порошковая покраска",
+        "en": "Powder coating"
+    },
+    "page-poroshkovaya-pokraska-text-one": {
+        "ru": "По сравнению с традиционными\n" +
+            "жидкими окрасочными\n" +
+            "материалами, порошковая краска\n" +
+            "для металла представляет собой\n" +
+            "технологическое превосходство,\n" +
+            "которое заключается в\n" +
+            "совершенствовании конечного\n" +
+            "результата за счет размеренного\n" +
+            "помещения краски на изделии,\n" +
+            "хорошо заполняющего все проемы,\n" +
+            "углубления, небольшие вмятины и\n" +
+            "неровности металлического\n" +
+            "предмета, создавая идеально\n" +
+            "ровную поверхность.",
+        "en": "Compared to traditional liquid\n" +
+            "paint materials, powder paint\n" +
+            "for metal is technological \n" +
+            "superiority, which consists in\n" +
+            "improving the final result due to\n" +
+            "measured placing paint on the \n" +
+            "product, well filling all openings,\n" +
+            "indentations, small dents and\n" +
+            "unevenness of metal\n" +
+            "subject, creating a perfect\n" +
+            "flat surface."
+    },
+    "page-poroshkovaya-pokraska-text-two": {
+        "ru": "Покраска порошковой краской -\n" +
+            "экологически чистая, не имеющая\n" +
+            "отходов технология, используемая в\n" +
+            "качестве защитной и декоративной\n" +
+            "отделки. Такой вид покраскидает\n" +
+            "возможность использовать\n" +
+            "практически безграничный выбор\n" +
+            "цветов и структур, что придает\n" +
+            "поверхности эстетический вид и\n" +
+            "долговечность. Поверхности,\n" +
+            "которые были покрыты порошком,\n" +
+            "более стойкие к разному рода\n" +
+            "воздействий окружающей среды:\n" +
+            "влажности, химикатов,\n" +
+            "ультрафиолетового света,\n" +
+            "атмосферного давления и других\n" +
+            "экстремальных погодных условий.",
+        "en": "Powder painting - environmentally \n" +
+            "friendly, without waste technology \n" +
+            "used in as a protective and decorative\n" +
+            "finishes. This kind of paints\n" +
+            "opportunity to use almost limitless \n" +
+            "choice colors and structures, which \n" +
+            "gives surface aesthetic appearance \n" +
+            "and durability. Surfaces, which were \n" +
+            "covered with powder, more resistant \n" +
+            "to different kinds environmental \n" +
+            "influences: moisture, chemicals,\n" +
+            "ultraviolet light, atmospheric pressure\n " +
+            "and other extreme weather conditions.\n"
+    },
+    "page-poroshkovaya-pokraska-title-two": {
+        "ru": "Процесс изготовления",
+        "en": "Manufacturing process"
+    },
+    "page-poroshkovaya-pokraska-title-three": {
+        "ru": "Узнайте цены на продукцию",
+        "en": "Find out product prices"
+    },
+    "page-poroshkovaya-pokraska-text-three": {
+        "ru": "Отправьте запрос и получите\n" +
+            "прайс-лист на сетку кладочную. Вы\n" +
+            "получите файл с подробным\n" +
+            "описанием всех цен.",
+        "en": "Send a request and receive\n" +
+            "price list for masonry mesh. You\n" +
+            "get a file with detailed\n" +
+            "a description of all prices."
+    },
+    "page-poroshkovaya-pokraska-button-price": {
+        "ru": "Получить прайс-лист",
+        "en": "Get a price list"
+    },
+    "page-poroshkovaya-pokraska-title-four": {
+        "ru": "Уточните заказ",
+        "en": "Specify your order"
+    },
+    "page-poroshkovaya-pokraska-text-four": {
+        "ru": "Для исключения неточностей при заказе, а так же для того,\n" +
+            "чтобы узнать актуальную информацию о продукции, сроках\n" +
+            "изготовления и доставки, отправьте заявку и наш менеджер\n" +
+            "перезвонит в любое удобное время",
+        "en": "To avoid inaccuracies when ordering, as well as in order to\n" +
+            "to find out the latest information about products, terms\n" +
+            "production and delivery, send a request and our manager\n" +
+            "will call you back at any convenient time"
+    },
+    "page-poroshkovaya-pokraska-button-send": {
+        "ru": "Отправить заявку",
+        "en": "Send a request"
+    },
 };
 
